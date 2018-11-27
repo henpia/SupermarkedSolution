@@ -14,6 +14,6 @@ namespace Supermarked.Models
 
         public string Betegnelse { get; set; }
 
-        public ICollection<Vare> Vares { get; set; }
+        public ICollection<Vare> Varer { get; set; }
     }
 }
