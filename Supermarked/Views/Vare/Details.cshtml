@@ -1,0 +1,58 @@
+﻿@model Supermarked.Models.Vare
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vare</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Varegruppe.Betegnelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Varegruppe.Betegnelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Betegnelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Betegnelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beskrivelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beskrivelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pris)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pris)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AntalPaaLager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AntalPaaLager)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VareId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

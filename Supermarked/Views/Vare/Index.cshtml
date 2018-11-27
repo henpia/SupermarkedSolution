@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Supermarked.Models.Vare>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Varegruppe.Betegnelse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Betegnelse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Beskrivelse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pris)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AntalPaaLager)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Varegruppe.Betegnelse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Betegnelse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Beskrivelse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pris)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AntalPaaLager)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VareId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VareId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VareId })
+        </td>
+    </tr>
+}
+
+</table>
