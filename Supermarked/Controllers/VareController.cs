@@ -101,7 +101,8 @@ namespace Supermarked.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vare vare = db.Varer.Find(id);
+            // Vare vare = db.Varer.Find(id);
+            Vare vare = db.Varer.Include(v => v.Varegruppe).Where(v => v.VareId == id).First();
             if (vare == null)
             {
                 return HttpNotFound();
