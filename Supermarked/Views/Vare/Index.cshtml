@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Supermarked.Models.Vare>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Vareoversigt";
 }
 
-<h2>Index</h2>
+<h2>Vareoversigt</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Opret ny vare", "Create", new { }, new { @class="btn btn-primary" })
 </p>
 <table class="table">
     <tr>
@@ -47,9 +47,9 @@
             @Html.DisplayFor(modelItem => item.Varegruppe.Betegnelse)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.VareId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.VareId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.VareId })
+            @Html.ActionLink("Ret", "Edit", new { id=item.VareId }, new { @class="btn btn-primary btn-xs" })
+            @Html.ActionLink("Info", "Details", new { id=item.VareId }, new { @class="btn btn-info btn-xs" })
+            @Html.ActionLink("Slet", "Delete", new { id=item.VareId }, new { @class="btn btn-danger btn-xs" })
         </td>
     </tr>
 }
