@@ -12,9 +12,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Varegruppe.Betegnelse)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Betegnelse)
         </th>
         <th>
@@ -26,14 +23,14 @@
         <th>
             @Html.DisplayNameFor(model => model.AntalPaaLager)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Varegruppe.Betegnelse)
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Varegruppe.Betegnelse)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Betegnelse)
         </td>
@@ -45,6 +42,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AntalPaaLager)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Varegruppe.Betegnelse)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.VareId }) |
