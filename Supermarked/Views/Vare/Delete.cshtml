@@ -1,0 +1,64 @@
+﻿@model Supermarked.Models.Vare
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Vare</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Varegruppe.Betegnelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Varegruppe.Betegnelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Betegnelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Betegnelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beskrivelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beskrivelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pris)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pris)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AntalPaaLager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AntalPaaLager)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
