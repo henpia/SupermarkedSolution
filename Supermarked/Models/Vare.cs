@@ -12,6 +12,7 @@ namespace Supermarked.Models
     {
         public int VareId { get; set; }
 
+        [Display(Name = "Vare")]
         public string Betegnelse { get; set; }
 
         public string Beskrivelse { get; set; }

@@ -12,6 +12,7 @@ namespace Supermarked.Models
     {
         public int VaregruppeId { get; set; }
 
+        [Display(Name = "Varegruppe")]
         public string Betegnelse { get; set; }
 
         public ICollection<Vare> Varer { get; set; }
