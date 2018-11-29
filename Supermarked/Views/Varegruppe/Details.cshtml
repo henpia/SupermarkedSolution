@@ -1,13 +1,12 @@
 ﻿@model Supermarked.Models.Varegruppe
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Info om Varegruppe";
 }
 
-<h2>Details</h2>
+<h2>Info om Varegruppe</h2>
 
 <div>
-    <h4>Varegruppe</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -21,6 +20,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.VaregruppeId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Varegrupper", "Index", new { }, new { @class="btn btn-primary" })
+    @Html.ActionLink("Ret", "Edit", new { id = Model.VaregruppeId }, new { @class="btn btn-info" })
 </p>

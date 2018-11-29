@@ -43,6 +43,22 @@ textarea {
     text-align: center;
 }
 
+.card:hover {
+    border: 3px solid green;
+}
+
+.card:hover a {
+    text-decoration: none;
+}
+
 .card img {
     width: 70%;
+}
+
+.bund {
+    font-size: 1.5rem;
+}
+
+.bund a {
+    text-decoration: none;
 }
