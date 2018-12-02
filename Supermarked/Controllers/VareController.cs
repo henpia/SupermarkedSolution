@@ -15,9 +15,13 @@ namespace Supermarked.Controllers
         private SupermarkedDB db = new SupermarkedDB();
 
         // GET: Vare
-        public ActionResult Index()
+        public ActionResult Index(int? vareGrp)
         {
             var varer = db.Varer.Include(v => v.Varegruppe);
+            if (vareGrp > 0)
+            {
+                varer = varer.Where(v => v.VaregruppeId == vareGrp);
+            }
             return View(varer.ToList());
         }
 
