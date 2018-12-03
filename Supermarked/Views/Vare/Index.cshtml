@@ -46,7 +46,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Varegruppe.Betegnelse)
         </td>
-        <td>
+        <td class="text-center">
             @Html.ActionLink("Ret", "Edit", new { id=item.VareId }, new { @class="btn btn-primary btn-xs" })
             @Html.ActionLink("Info", "Details", new { id=item.VareId }, new { @class="btn btn-info btn-xs" })
             @Html.ActionLink("Slet", "Delete", new { id=item.VareId }, new { @class="btn btn-danger btn-xs" })
