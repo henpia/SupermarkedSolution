@@ -14,7 +14,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Betegnelse)
         </th>
-        <th></th>
+        <th class="col-md-2"></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -22,7 +22,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Betegnelse)
         </td>
-        <td>
+        <td class="text-center">
             @Html.ActionLink("Ret", "Edit", new { id=item.VaregruppeId }, new { @class="btn btn-primary btn-xs" })
             @Html.ActionLink("Info", "Details", new { id=item.VaregruppeId }, new { @class="btn btn-info btn-xs" })
             @Html.ActionLink("Slet", "Delete", new { id=item.VaregruppeId }, new { @class="btn btn-danger btn-xs" })
