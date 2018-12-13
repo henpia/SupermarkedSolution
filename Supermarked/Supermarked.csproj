@@ -163,6 +163,10 @@
     <Compile Include="Migrations\201812121520420_Initial.Designer.cs">
       <DependentUpon>201812121520420_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812130945537_Lokation.cs" />
+    <Compile Include="Migrations\201812130945537_Lokation.Designer.cs">
+      <DependentUpon>201812130945537_Lokation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DBInitializer.cs" />
     <Compile Include="Models\SupermarkedDB.cs" />
@@ -249,6 +253,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812121520420_Initial.resx">
       <DependentUpon>201812121520420_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812130945537_Lokation.resx">
+      <DependentUpon>201812130945537_Lokation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
