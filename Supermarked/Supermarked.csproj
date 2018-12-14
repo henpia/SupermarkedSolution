@@ -167,6 +167,10 @@
     <Compile Include="Migrations\201812130945537_Lokation.Designer.cs">
       <DependentUpon>201812130945537_Lokation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812141106555_Tilføjet Test Vare til Seed method.cs" />
+    <Compile Include="Migrations\201812141106555_Tilføjet Test Vare til Seed method.Designer.cs">
+      <DependentUpon>201812141106555_Tilføjet Test Vare til Seed method.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DBInitializer.cs" />
     <Compile Include="Models\SupermarkedDB.cs" />
@@ -198,6 +202,7 @@
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\Supermarked SmarterASP.NET.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -256,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812130945537_Lokation.resx">
       <DependentUpon>201812130945537_Lokation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812141106555_Tilføjet Test Vare til Seed method.resx">
+      <DependentUpon>201812141106555_Tilføjet Test Vare til Seed method.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
